@@ -6,6 +6,9 @@
   "scripts": {
     "start": "http-server -p 8000 -c-1 --silent"
   },
+  "engines": {
+    "node": ">=22 < 23"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
