@@ -1,0 +1,14 @@
+{
+  "name": "java_talk",
+  "version": "1.0.0",
+  "description": "Charla de Java con impress",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1 --silent"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
