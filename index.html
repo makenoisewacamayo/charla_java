@@ -182,6 +182,31 @@
         </div>
     </div>
 
+    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2> Collecciones en Java</h2>
+        <div class="mermaid">
+        %% This is a comment in mermaid markup
+        graph LR
+        A(Iterable)
+        B(Collection)
+        C(List)
+        D(AbstractList)
+        E(ArrayList)
+        F(Vector)
+        G(LinkedList)
+        H(Stack)
+        A <|-- B
+        B <|-- C
+        C <|-- D
+        D <|-- E
+        D <|-- F
+        D <|-- G
+        F <|-- H
+        class C,E,F,G,H startEnd;
+        </div>
+
+    </div>
+
     <!--
         This element introduces rotation.
         
@@ -317,32 +342,32 @@
         </div>
     </div>
 
-    <div class="step slide">
-        <h1>Mermaid.js</h1>
-        <div class="mermaid">
-        %% This is a comment in mermaid markup
-        graph LR
-          A(Support for<br />diagrams)
-          B[Provided by<br />mermaid.js]
-          C{Already<br />know<br />mermaid?}
-          D(Tutorial)
-          E(Great, hope you enjoy!)
-          A-->B
-          B-->C
-          C--No-->D
-          C--Yes-->E
-          classDef startEnd fill:#fcc,stroke:#353,stroke-width:2px;
-          class A,D,E startEnd;
-        </div>
+        <div class="step slide">
+            <h1>Mermaid.js</h1>
+            <div class="mermaid">
+            %% This is a comment in mermaid markup
+            graph LR
+            A(Support for<br />diagrams)
+            B[Provided by<br />mermaid.js]
+            C{Already<br />know<br />mermaid?}
+            D(Tutorial)
+            E(Great, hope you enjoy!)
+            A-->B
+            B-->C
+            C--No-->D
+            C--Yes-->E
+            classDef startEnd fill:#fcc,stroke:#353,stroke-width:2px;
+            class A,D,E startEnd;
+            </div>
 
-        <h1><a href="http://docs.mathjax.org/en/latest/start.html">MathJax.js</a></h1>
-        <p>Use \(\LaTeX\), MathML or AsciiMath to properly show mathematical formula.</p>
-        <div class="notes">
-          Mermaid.js, likewise in <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, draws SVG diagrams from a MarkDown-like syntax. To learn
-          more about it <a href="http://knsv.github.io/mermaid/index.html#usage">read the fine manual</a>.
+            <h1><a href="http://docs.mathjax.org/en/latest/start.html">MathJax.js</a></h1>
+            <p>Use \(\LaTeX\), MathML or AsciiMath to properly show mathematical formula.</p>
+            <div class="notes">
+            Mermaid.js, likewise in <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
+            directory, draws SVG diagrams from a MarkDown-like syntax. To learn
+            more about it <a href="http://knsv.github.io/mermaid/index.html#usage">read the fine manual</a>.
+            </div>
         </div>
-    </div>
 
     <div id="markdown" class="step slide markdown">
 # Markdown.js
