@@ -1,21 +1,4 @@
 <!doctype html>
-
-<!--
-  This is a simple example / template impress.js slide show. The goal is to be
-  easier to read for a first timer than the official and very feature rich
-  demo by bartaz (http://bartaz.github.io/impress.js/). It's also a very
-  traditional presentation that looks like slides (square screens with bullet
-  points...), again to make a first timer feel more at home. From this simple
-  presentation you can then go on to more powerful impress.js presentations!
-  
-  This example is hopefully helpful for people that want to create both
-  simple and (eventually) awesome presentations in impress.js and comfortable
-  doing that directly in HTML.
-  
-  By: @henrikingo (Still based on the HTML from bartaz' demo.)  
-    
--->
-
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -23,65 +6,23 @@
 
     <meta name="description" content="Charla de Java con impress.js" />
     <meta name="author" content="Rafael Avaria" />
-    <!--        
-        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
-        presentation to work. 
-        
-        However, some of the `extras/` modules do come with their own CSS, and we load
-        them here. You can read about each extras module separately in their directory.
-    -->
+  
     <link rel="stylesheet" href="./css/github.css">
     <link rel="stylesheet" href="./css/mermaid.forest.css">
-
-    <!-- This file contains common styles for example presentations. -->
     <link href="./css/impress-common.css" rel="stylesheet" />
-    <!--
-        This file contains styles specific for this example presentation. 
-    -->
     <link href="./css/classic-slides.css" rel="stylesheet" />
     
 </head>
 
-<!--
-    
-    Body element is used by impress.js to set some useful class names, that will allow you to detect
-    the support and state of the presentation in CSS or other scripts.
-    
-    First very useful class name is `impress-not-supported`. This class means, that browser doesn't
-    support features required by impress.js, so you should apply some fallback styles in your CSS.
-    It's not necessary to add it manually on this element. If the script detects that browser is not
-    good enough it will add this class, but keeping it in HTML means that users without JavaScript
-    will also get fallback styles.
-    
-    When impress.js script detects that browser supports all required features, this class name will
-    be removed.
-    
-    Another class name on body element also depends on currently active presentation step.    
--->
+
 <body class="impress-not-supported">
-<!--
-    This fallback message is only visible when there is `impress-not-supported` class on body.
--->
+
 <div class="fallback-message">
     <p>Tu navegador <b>no soporta las características requeridas</b> por impress.js, así que se muestra una versión simplificada de esta presentación.</p>
     <p>Para una mejor experiencia, por favor utiliza la última versión de <b>Chrome</b>, <b>Safari</b> o <b>Firefox</b>.</p>
 </div>
 
-<!--
-    This is the core element used by impress.js: the wrapper for your presentation steps. 
-    In this element all the impress.js magic happens.
-    
-    data-transition-duration sets the time in microseconds that is used for the
-    animation when transtitioning between slides.
-    
-    The width, height, scale and perspective options define a target screen size that you should
-    design your CSS against. impress.js will automatically scale all content to different screen
-    sizes. See DOCUMENTATION.md for details. Below, I have targeted full HD screen resolution.
-    
-    data-autoplay can be used to set the time in seconds, after which presentation
-    automatically moves to next slide. It can also be set individually for each
-    slide, but here we just set a common duration for all slides.
--->
+
 <div id="impress"
     data-transition-duration="1000"
 
@@ -91,49 +32,23 @@
     data-min-scale="0"
     data-perspective="1000"
 
-    data-autoplay="10">
+    data-autoplay="0">
 
-    <!--
-        Each step of the presentation should be an element inside the `#impress` with a class name
-        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
-        the 'camera' shows them on each step of the presentation.
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        This step is auto-assigned the id "step-1". You can also use `#step-1` in a link, to 
-        point directly to this particular step.
-        
-        Positioning information is passed through data-* attributes.
-        
-        In the example below we only specify x and y position of the step element with `data-x="-1000"`
-        and `data-y="-1500"` attributes. This means that **the center** of the element (yes, the center)
-        will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'. It will not 
-        be rotated or scaled.
-        
-        The "step" class is what *must* be used for every "slide". In this example we also use the "slide"
-        class, which adds a rectangle with some background and makes this presentation look like a traditional
-        powerpoint slide show. The "slide" class is entirely optional and indeed you wouldn't use it for
-        your cooler impress.js presentations.
-    -->
     <div class="step slide title" data-x="-2200" data-y="-3000">
         <h1>Charla de Java: <br />
         Para desarrolladores de Front</h1>
         <h2>Rafael Avaria</h2>
         <h3>2026</h3>
 
-        <div class="notes">
-        Any element with the class="notes" will not be displayed. This can
-        be used for speaker notes. In fact, the impressConsole plugin will
-        show it in the speaker console!
-        </div>
+      
     </div>
 
     <div id="toc" class="step slide" data-rel-x="2200" data-rel-y="0">
         <h1>Tabla de Contenidos</h1>
         <ul>
-            <li><a href="#step-1">Diapositiva de título</a></li>
-            <li><a href="#step-2">Tabla de Contenidos</a></li>
-            <li><a href="#step-3">Diapositiva de texto</a></li>
+            <li><a href="#step-1">Javascript y Angular</a></li>
+            <li><a href="#step-2">Ecosistema de Java</a></li>
+            <li><a href="#step-3"></a></li>
             <li><a href="#step-4">Puntos clave</a></li>
             <li><a href="#step-5">Cita &amp; imagen</a></li>
             <li><a href="#step-6">Más estilos de texto básicos</a></li>
@@ -142,68 +57,107 @@
             <li><a href="#moreinfo">Más información</a></li>
         </ul>
 
-        <div class="notes">
-           <p>Table of Contents, with links to other slides of this same presentation.</p>
-         
-           <p>Note that instead of absolute positioning we use relative positioning,
-           with the data-rel-x and data-rel-y attributes. This means the step is
-           positioned relative to the foregoing step. In other words, this is 
-           equivalent to data-x="0" data-y="-3000".</p>
+    
+    </div>
+
+    <div class="step slide">
+        <h1>Javascript y angular</h1>
+        <p>Javascript es el lenguaje</p>
+        <p>Angular es un framework y dicta el tono de como vamos a usar js </p>
+        
+        <div class="compare">
+            <section>
+                <h3>js</h3>
+                <p class="compare__p">Proxy object </p>
+                <p class="compare__p">Reflect</p>
+                <p class="compare__p">Generadores</p>
+                <p class="compare__p">Simbolos</p>
+                <p class="compare__p">Map y set</p>
+                <p class="compare__p">WeakMap y WeakSet</p>
+                <p class="compare__p">Iteradores</p>
+            </section>
+            <section>
+                <h3>Angular</h3>
+                <p class="compare__p">Rxjs y zone js</p>
+                <p class="compare__p">Uso de anotaciones</p>
+                <p class="compare__p">Formularios Reactivos (tipados)</p>
+                <p class="compare__p">Signals</p>
+                <p class="compare__p">Componentes (standalone)</p>
+                <p class="compare__p">api propia de animaciones</p>
+                <p class="compare__p">Modulos, Servicios, Directivas</p>
+            </section>
         </div>
     </div>
 
     <div class="step slide">
-        <h1>A slide with text</h1>
-        <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
-        <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
-        <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
-
-        <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
-        </div>
+        <h1>El ecosistema de Java</h1>
+        <img src="images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_54i1wrusrze2y6ch8hih.webp" 
+             alt="Ecosistema java" 
+             class="right"/>
+         <blockquote>
+            Java Platform, Standard Edition (Java SE)<br />
+            Java Platform, Enterprise Edition (Java EE)<br />
+            Java Platform, Micro Edition (Java ME)<br />
+            JavaFX<br />
+            <p class="left bottom"><small>Imagen: <a href="https://app10.blogspot.com/2015/11/differences-between-java-ee-and-java-se.html">Alexander Souza</a></small></p>
+        </blockquote>
     </div>
 
     <div class="step slide">
-        <h1>Bullet points</h1>
-        <ul>
-            <li>A slide with bullet points. This is the first point.</li>
-            <li>Second point</li>
-            <li>Third point. Under this point we also have some sub-bullets:
-                <ul>
-                    <li>Sub-bullet 1</li>
-                    <li>Sub-bullet 2</li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="notes">
+        <h1>Java y springboot</h1>
+        <p>Java es el lenguaje</p>
+        <p>springboot es un framework y dicta el tono de como vamos a usar java </p>
+        
+        <div class="compare">
+            <section>
+                <h3>Java</h3>
+                <p class="compare__pj">Colecciones</p>
+                <p class="compare__pj">Lambdas y interfaces funcionales</p>
+                <p class="compare__pj">Streams API</p>
+                <p class="compare__pj">Optional</p>
+                <p class="compare__pj">CompletableFuture / concurrency mejorada</p>
+                <p class="compare__pj">JPMS / Módulos (Module System)</p>
+                <p class="compare__pj">Text Blocks</p>
+                <p class="compare__pj">Records, Pattern Matching y Sealed Classes</p>
+            </section>
+            <section>
+                <h3>Spring boot</h3>
+                <p class="compare__pj">Starters</p>
+                <p class="compare__pj">Embedded servers (Tomcat, Jetty, Undertow)</p>
+                <p class="compare__pj">Opinionated defaults</p>
+                <p class="compare__pj">Spring Boot Actuator, metricas</p>
+                <p class="compare__pj">Externalized configuration</p>
+                <p class="compare__pj">Spring Data y soporte de persistencia</p>
+                <p class="compare__pj">Integración con el ecosistema Spring — seguridad, mensajería, cloudm testing y extensibilidad.</p>
+            </section>
         </div>
     </div>
 
     <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h2> Collecciones en Java</h2>
-        <div class="mermaid">
-        %% This is a comment in mermaid markup
-        graph LR
-        A(Iterable)
-        B(Collection)
-        C(List)
-        D(AbstractList)
-        E(ArrayList)
-        F(Vector)
-        G(LinkedList)
-        H(Stack)
-        A <|-- B
-        B <|-- C
-        C <|-- D
-        D <|-- E
-        D <|-- F
-        D <|-- G
-        F <|-- H
-        class C,E,F,G,H startEnd;
-        </div>
+        <h2> Colecciones en Java</h2>
+         <img src="images/herenciaiterable.png" 
+             alt="Ecosistema java"
+             width="500"
+             height="600"
+             class="left"/>
+        <pre>
+            <code>
+                package com.arquitecturajava;
+                import java.util.Map;
+                import java.util.List;
+
+                public class Principal2 {
+
+                    public static void main(String[] args) {
+                        Iterable lista = List.of("hola", "que", "tal", "estas");
+                        lista.forEach(System.out::println);
+
+                        Map mapa = Map.of(1, "ordenador", 2, "Tablet");
+                        mapa.forEach((clave, valor) -> System.out.println(clave + ":" + valor));
+                    }
+                }
+        </code>
+    </pre>
 
     </div>
 

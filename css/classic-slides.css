@@ -135,7 +135,7 @@ body {
 
 /* Highlight.js used for coloring pre > code blocks. */
 .slide pre > code {
-    font-size: 30px;
+    font-size: 22px;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -377,3 +377,19 @@ td {
 .impress-enabled #impress                 { pointer-events: auto }
 .impress-enabled #impress-toolbar         { pointer-events: auto }
 .impress-enabled #impress-console-button  { pointer-events: auto }
+
+
+.compare {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    gap: 0.5rem;
+    margin-inline: 2rem;
+}
+
+.compare__p {
+   font-size: 1.5rem;
+} 
+
+.compare__pj {
+   font-size: 1.2rem;
+} 
