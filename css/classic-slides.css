@@ -63,13 +63,13 @@ body {
 .step {
     position: relative;
     width: 1800px;
-    padding: 60px;
-    margin: 60px auto;
+    padding:3.75rem;
+    margin:3.75rem auto;
 
     box-sizing:         border-box;
 
     font-family: 'PT Serif', georgia, serif;
-    font-size: 60px;
+    font-size:3.75rem;
     line-height: 1.5;
 }
 /*
@@ -95,20 +95,20 @@ body {
 .slide {
     display: block;
 
-    width: 1850px;
-    height: 1000px;
-    padding: 40px 60px;
+    width: 115.625rem;
+    height: 62.5rem;
+    padding: 2.5rem 3.75rem;
 
     background-image: url(../images/background.png);
     background-color: white;
     border: 2px solid rgba(0, 0, 0, .3);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 
     text-shadow: 0 3px 3px rgba(0, 0, 0, .2);
 
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 2.813rem;
     letter-spacing: -2px;
 }
 
@@ -135,7 +135,7 @@ body {
 
 /* Highlight.js used for coloring pre > code blocks. */
 .slide pre > code {
-    font-size: 22px;
+    font-size: 1.375rem;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -197,7 +197,7 @@ small {
 }
 
 img {
-    width: 600px
+    width: 37.5rem
 }
 
 td {
@@ -206,29 +206,29 @@ td {
 
 .slide .right {
     float: right;
-    margin-left:  60px;
-    margin-right:   0px;
-    margin-top:    40px;
-    margin-bottom: 40px;
+    margin-left:   3.75rem;
+    margin-right:  0;
+    margin-top:    2.5rem;
+    margin-bottom: 2.5rem;
 }
 .slide .left {
     float: left;
-    margin-right: 60px;
-    margin-left:    0px;
-    margin-top:    40px;
-    margin-bottom: 40px;
+    margin-right:  3.75rem;
+    margin-left:   0;
+    margin-top:    2.5rem;
+    margin-bottom: 2.5rem;
 }
 .slide .top {
     position: absolute;
-    top: 40px;
-    margin-bottom:  40px;
-    margin-top:      0px;    
+    top:           2.5rem;
+    margin-bottom: 2.5rem;
+    margin-top:    0;    
 }
 .slide .bottom {
     position: absolute;
-    bottom: 40px;
-    margin-bottom:   0px;
-    margin-top:     40px;    
+    bottom:        2.5rem;
+    margin-bottom: 0;
+    margin-top:    2.5rem;    
 }
 
 /* 
@@ -243,7 +243,7 @@ td {
 .title h2,
 .title h3 {
     position: absolute;
-    left: 90px; /* slide width is 1800px, so this is like a 5% margin on both sides */
+    left: 5.625rem; /* slide width is 1800px, so this is like a 5% margin on both sides */
     width: 90%;
     text-align: center;
 }
@@ -312,10 +312,10 @@ td {
 
 #acme-graph-bottom {
     position: absolute;
-    bottom: 100px;
-    right: 200px;
+    bottom: 6.25rem;
+    right: 12.5rem;
     background-color: black;
-    width: 900px;
+    width: 56.25rem;
     height: 3px;
 }
 
@@ -325,31 +325,31 @@ td {
 #acme-graph-q3,
 #acme-graph-q4 {
     border: solid 1px black;
-    width: 140px;
-    margin-left: 30px;
+    width: 8.75rem;
+    margin-left: 1.875rem;
     position: absolute;
-    bottom: 100px;
+    bottom: 6.25rem;
 }
 
 #acme-graph-q1 {
     background-color: red;
-    right: 900px;
+    right: 56.25rem;
 }
 
 #acme-graph-q2 {
     background-color: blue;
-    right: 700px;
+    right: 43.75rem;
 }
 
 #acme-graph-q3 {
     background-color: green;
-    right: 500px;
+    right: 31.25rem;
 }
 
 #acme-graph-q4 {
     background-color: purple;
-    left: 750px;
-    right: 300px;
+    left: 46.875rem;
+    right: 18.75rem;
 }
 
 /*
@@ -393,3 +393,22 @@ td {
 .compare__pj {
    font-size: 1.2rem;
 } 
+
+.original_zize {
+    font-size: 2.063rem;
+}
+
+.centering {
+  display: grid;
+  place-content: center;
+}
+
+.centering--image {
+    object-fit: scale-down;
+    width: 100%;
+    height: 83%;
+} 
+
+.centering--image:is(img, picture) {
+    display: block;
+}
