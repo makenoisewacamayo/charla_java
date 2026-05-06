@@ -394,9 +394,19 @@ td {
    font-size: 1.2rem;
 } 
 
-.original_zize {
+.original_size {
     font-size: 2.063rem;
 }
+
+.reduce_size {
+    font-size: 1.2rem;
+    margin-block: 0;
+}
+
+.h2_margin_block_8px {
+     margin-block: 8px;
+}
+
 
 .centering {
   display: grid;

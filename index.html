@@ -50,7 +50,7 @@
             <li><a href="#step-4">Una función en java</a></li>
             <li><a href="#step-5">Colecciones en java</a></li>
             <li><a href="#step-6">Java Streams y Lambdas</a></li>
-            <li><a href="#step-7">Efectos de movimiento 101</a></li>
+            <li><a href="#step-7">Text record</a></li>
             <li><a href="#addons">Complementos</a></li>
             <li><a href="#moreinfo">Más información</a></li>
         </ul>
@@ -96,8 +96,63 @@
             Java Platform, Micro Edition (Java ME)<br />
             JavaFX
         </blockquote>
-        <p class="left bottom"><small>Referencia a la imagen: <a href="https://app10.blogspot.com/2015/11/differences-between-java-ee-and-java-se.html">Alexander Souza blog</a></small></p>
+        <p class="left bottom"><small>Referencia de la imagen: <a href="https://app10.blogspot.com/2015/11/differences-between-java-ee-and-java-se.html">Alexander Souza blog</a></small></p>
     </div>
+
+    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h1>La Maquina virtual de Java</h1>
+        <img src="images/0_4NnceIUku3NgtfDs.webp" 
+             alt="Maquina virtual de Java" 
+             height="600"
+            class="right"
+         />
+         <blockquote>
+            Compilación: genera bytecodes (javac) <br />
+            Carga de clases: carga las clases en la JVM (jvm) <br />
+            Ejecución: el motor de ejecución de Java (JVM) interpreta y ejecuta el bytecode (jvm)<br />
+         </blockquote>
+        <p class="left bottom"><small>Referencia de la imagen: <a href="https://medium.com/javarevisited/how-java-programs-are-compiled-and-run-behind-the-scenes-explained-7b2a8c5bfd56">Medium: Ramesh Fadatare</a></small></p>
+    </div>
+
+    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h1> Lenguages que pueden correr en la Maquina virtual de Java</h1>
+        <div class="centering">
+            <img src="images/images.jpeg" 
+                alt="Maquina virtual de Java" 
+               />
+        </div>
+         <blockquote>
+            Java, Kotlin, Scala, Groovy, Clojure, JRuby, Jython, Ceylon, Fantom, etc.
+        </blockquote>
+        <p class="left bottom"><small>Referencia de la imagen: <a href="https://www.facebook.com/photo.php?fbid=2225246357802848&set=a.378158921147915&id=100068614291134">Grupo Freaky engineers</a></small></p>
+    </div>
+
+
+    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h1>Como se baja depencias en Java</h1>
+        <p>Java es el lenguaje</p>
+        <p>springboot es un framework y dicta el tono de como vamos a usar java </p>
+        
+        <div class="compare">
+            <section>
+                <h3>Javascript</h3>
+                <p class="compare__pj">npm</p>
+                <p class="compare__pj">yarn (React)</p>
+                <p class="compare__pj">pnpm ( mono repositorios )</p>
+                <p class="compare__pj">Configurar .npmrc para bajar dependencias de bci</p>
+            </section>
+            <section>
+                <h3>Java</h3>
+                <p class="compare__pj">maven</p>
+                <p class="compare__pj">Configurar .m2 para que baje artefactos de BCI</p>
+                <p class="compare__pj">gradle</p>
+                <p class="compare__pj">Configurar gradle demon con gradle files para poder acceder a artefactos de bci</p>
+                <p class="compare__pj">Configurar repositorios en pom.xml con maven</p>
+                <p class="compare__pj">Configurar dependencias en build.gradle con </p>
+            </section>
+        </div>
+    </div>
+
 
     <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Java y springboot</h1>
@@ -132,8 +187,8 @@
 
     <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h2> Una función en Java</h2>
-        <pre class="original_zize">
-            <code>
+        <pre class="original_size">
+            <code class="hljs java">
                 public class MathUtil {
                     // Java es tipado y le gusta saber si una función puede lanzar una excepción (no es mandatorio)
                     public static int add(int a, int b) throws IllegalArgumentException {
@@ -158,20 +213,23 @@
         <p>La excepción mas famosa "NullPointerException" (del millon de dolares)</p>
         <div class="centering">
             <img src="images/java-exceptions-hierarchy-example.webp" 
-                alt="Ecosistema java"
+                alt="Exceciones de java"
                 class="centering--image"/>
-        </div>     
+        </div>
+         <p class="left bottom"><small>Referencia de la imagen: <a href=" https://somoshackersdelaprogramacion.es/excepciones-en-java">Somos Hackers de la Programación</a></small></p>
+    </div>
+       
     </div>
 
     <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h2> Colecciones en Java</h2>
+        <h2> Colecciones en Java, desde Java 1.2</h2>
          <img src="images/herenciaiterable.png" 
-             alt="Ecosistema java"
+             alt="Colecciones de java"
              width="500"
-             height="600"
-             class="left"/>
+             height="500"
+             class="left" />
         <pre>
-            <code>
+            <code class="hljs java">
                 package com.arquitecturajava;
                 import java.util.Map;
                 import java.util.List;
@@ -188,13 +246,15 @@
                 }
             </code>
         </pre>
- </div>
+        <p class="left bottom"><small>Referencia de la imagen: <a href="https://www.arquitecturajava.com/java-collections-framework-y-su-estructura/">Arquitectura Java blog</a></small></p>
+    </div>
+       
 
-<div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-    <h2> Java Streams y Lambdas</h2>
+    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2> Java Streams y Lambdas, java v8</h2>
 
-     <pre class="original_zize">
-            <code>
+        <pre class="original_size">
+            <code class="hljs java">
                 public class Example {
                     public static int sum()  {
                       List<Integer> nums = Arrays.asList(1,2,3,4,5);
@@ -209,9 +269,77 @@
             </code>
         </pre>
     </div>
-     
 
-  >
+    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2 class="h2_margin_block_8px"> Text record, desde Java 15</h2>
+
+        <pre class="reduce_size">
+            <code class="hljs java">
+                String text = """
+                    This is a text block.
+                    It spans multiple lines without explicit \n characters.
+                    Leading indentation is stripped automatically.
+                """;
+                System.out.println(text);
+
+                String json = """
+                    {
+                    "name": "Alice",
+                    "path": "C:\\\\Users\\\\Alice"  // escape backslash as usual
+                    }
+                    """;
+                System.out.println(json);
+
+                String tpl = """
+                    Hello, %s!
+                    Today is %s.
+                    """.formatted("Bob", java.time.LocalDate.now());
+                System.out.println(tpl);
+            </code>
+        </pre>
+    </div>
+
+    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2 class="h2_margin_block_8px"> Record, desde Java 17</h2>
+
+        <pre class="reduce_size">
+            <code class="hljs java">
+            // Record es inmutable, no se pueden cambiar sus valores después de la creación
+            public record Persona(String nombre, int edad) { }
+
+            // como se usa
+            public class Main {
+                public static void main(String[] args) {
+                    Persona p = new Persona("Alicia", 30);
+                    System.out.println(p.nombre() + " is " + p.edad());
+                }
+            }
+            </code>
+        </pre>
+    </div>
+
+    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2 class="h2_margin_block_8px"> Pattern matching, desde Java 17</h2>
+
+        <pre class="reduce_size">
+            <code class="hljs java">
+            public class PatternInstanceOf {
+                static void describe(Object o) {
+                    if (o instanceof Persona persona) { 
+                        System.out.println("Persona: " + persona.nombre() + ", " + persona.edad());
+                    } else {
+                        System.out.println("Not a person: " + o);
+                    }
+                }
+
+                public static void main(String[] args) {
+                    describe(new Persona("Bob", 25));
+                    describe("a string");
+                }
+            }
+            </code>
+        </pre>
+    </div>
 
     <div id="motions" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Motion effects 101</h1>
@@ -243,57 +371,6 @@
         </div>
     </div>
 
-    <div id="zoom" class="step" data-rel-reset data-rel-x="-0.25w" data-rel-y="0.5h" data-scale="0.5">
-        <div class="notes">
-            <p>This step zoom in to left bottom of previous slide to see to small text.</p>
-            <p>It's a empty and transparent.</p>
-            <p><code>data-rel-reset</code> is used to prevent this step from inheriting the relative positioning from previous slide.</p>
-        </div>
-    </div>
-
-    <div id="addons" class="step slide title" data-rel-to="motions">
-        <h2>Add-ons</h2>
-        <div class="notes">
-        <p>This version of impress.js includes several add-ons, striving to make this a
-           full featured presentation app.</p>
-        <p>The previous step breaks the slide flow, changes the relative position and rotation.</p>
-        <p>This slide use <code>data-rel-to</code> to inherit relative position and rotation from the slide before previous slide.</p>
-        </div>
-    </div>
-
-    
-
-
-    <div id="moreinfo" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h1>More info</h1>
-        <ul>
-        <li><a href="https://github.com/impress/impress.js/blob/master/DOCUMENTATION.md">DOCUMENTATION.md</a> is the API reference.
-        </li>
-        <li><a href="https://github.com/impress/impress.js/blob/master/examples/classic-slides/index.html">Source of this presentation itself</a> is commented</li>
-        <li><a href="http://impress.github.io/impress.js/">Advanced Impress.js demo</a> by <a href="http://twitter.com/bartaz">@bartaz</a>
-            <ul>
-            <li>Again, the <a href="http://github.com/impress/impress.js/blob/master/index.html">html</a> 
-                and <a href="https://github.com/impress/impress.js/blob/master/css/impress-demo.css">css</a> source is well commented.</li>
-            </ul>
-        </li>
-        <li>More examples and demos:
-            <ul>
-            <li><a href="https://github.com/impress/impress.js/tree/master/examples">examples/</a> in this repository</li>
-            <li><a href="https://github.com/impress/impress.js/wiki/Examples-and-demos">on the impress.js wiki</a></li>
-            </ul>
-        </li>
-        <li>Check out <a href="https://github.com/impress/impressionist">Impressionist</a>: a 3D GUI to create impress.js presentations</li>
-        </ul>
-
-        <div class="notes">
-        </div>
-    </div>
-
-    <!-- This last, empty "slide" is set to be very large using the data-scale attribute, 
-         so that it covers all the other slides you just saw. 
-         It's a common way of zooming out at the end, to show the whole presentation.
-         In CSS, we set pointer-events:none to make this slide non-clickable. 
-         It makes a difference at least for SVG content, such as the mermaid diagram. -->
     <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
     </div>
 </div>
