@@ -34,29 +34,39 @@
 
     data-autoplay="0">
 
-    <div class="step slide title" data-x="-2200" data-y="-3000">
+    <div id="titulo" class="step slide title" data-x="-2200" data-y="-3000">
         <h1>Charla de Java: <br />
         Para desarrolladores de Front</h1>
         <h2>Rafael Avaria</h2>
         <h3>2026</h3>
     </div>
 
-    <div id="toc" class="step slide" data-rel-x="2200" data-rel-y="0">
+    <div id="java" class="step slide title" data-x="-2200" data-y="-3000">
+         <img src="images/java_javascript.jpeg" 
+             alt="Logo de java" 
+             class="centering--image-classic"/>
+    </div>
+
+    <div id="toc" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Contenidos</h1>
         <ul>
-            <li><a href="#step-1">Javascript y Angular</a></li>
-            <li><a href="#step-2">Ecosistema de Java</a></li>
-            <li><a href="#step-3">Java y springboot</a></li>
-            <li><a href="#step-4">Una función en java</a></li>
-            <li><a href="#step-5">Colecciones en java</a></li>
-            <li><a href="#step-6">Java Streams y Lambdas</a></li>
-            <li><a href="#step-7">Text record</a></li>
-            <li><a href="#addons">Complementos</a></li>
-            <li><a href="#moreinfo">Más información</a></li>
+            <li><a href="#js-angular">Javascript y Angular</a></li>
+            <li><a href="#java-ecosystem">Ecosistema de Java</a></li>
+            <li><a href="#jvm">La Maquina virtual de Java</a></li>
+            <li><a href="#jvm-langs">Lenguages de la jvm</a></li>
+            <li><a href="#dependencies">Dependencias js vs java</a></li>
+            <li><a href="#java-springboot">Java y springboot</a></li>
+            <li><a href="#java-function">Función en java</a></li>
+            <li><a href="#excepciones">Exceciones</a></li>
+            <li><a href="#colecciones">Colecciones</a></li>
+            <li><a href="#java-streams">Streams y lambas</a></li>
+            <li><a href="#text-record">Text Record</a></li>
+            <li><a href="#records">Records</a></li>
+            <li><a href="#pattern-matching">Pattern Matching</a></li>
         </ul>
     </div>
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div  id="js-angular" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Javascript y angular</h1>
         <p>Javascript es el lenguaje</p>
         <p>Angular es un framework y dicta el tono de como vamos a usar js </p>
@@ -85,7 +95,7 @@
         </div>
     </div>
 
-    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div  id="java-ecosystem" class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>El ecosistema de Java</h1>
         <img src="images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_54i1wrusrze2y6ch8hih.webp" 
              alt="Ecosistema java" 
@@ -99,7 +109,7 @@
         <p class="left bottom"><small>Referencia de la imagen: <a href="https://app10.blogspot.com/2015/11/differences-between-java-ee-and-java-se.html">Alexander Souza blog</a></small></p>
     </div>
 
-    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div class="step slide" id="jvm" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>La Maquina virtual de Java</h1>
         <img src="images/0_4NnceIUku3NgtfDs.webp" 
              alt="Maquina virtual de Java" 
@@ -114,7 +124,7 @@
         <p class="left bottom"><small>Referencia de la imagen: <a href="https://medium.com/javarevisited/how-java-programs-are-compiled-and-run-behind-the-scenes-explained-7b2a8c5bfd56">Medium: Ramesh Fadatare</a></small></p>
     </div>
 
-    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div class="step slide" id="jvm-langs" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1> Lenguages que pueden correr en la Maquina virtual de Java</h1>
         <div class="centering">
             <img src="images/images.jpeg" 
@@ -128,7 +138,7 @@
     </div>
 
 
-    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div  id="dependencies" class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Como se baja depencias en Java</h1>
         <p>Java es el lenguaje</p>
         <p>springboot es un framework y dicta el tono de como vamos a usar java </p>
@@ -154,7 +164,7 @@
     </div>
 
 
-    <div class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div id="java-springboot" class="step slide"  data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Java y springboot</h1>
         <p>Java es el lenguaje</p>
         <p>springboot es un framework y dicta el tono de como vamos a usar java </p>
@@ -185,7 +195,7 @@
     </div>
 
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div class="step slide" id="java-function" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h2> Una función en Java</h2>
         <pre class="original_size">
             <code class="hljs java">
@@ -208,7 +218,7 @@
         </pre>
     </div>
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div id="excepciones" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h2> Exceciones una para cada caso</h2>
         <p>La excepción mas famosa "NullPointerException" (del millon de dolares)</p>
         <div class="centering">
@@ -219,7 +229,7 @@
          <p class="left bottom"><small>Referencia de la imagen: <a href=" https://somoshackersdelaprogramacion.es/excepciones-en-java">Somos Hackers de la Programación</a></small></p>
     </div>
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div id="colecciones" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h2> Colecciones en Java, desde Java 1.2</h2>
          <img src="images/herenciaiterable.png" 
              alt="Colecciones de java"
@@ -248,8 +258,8 @@
     </div>
        
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h2> Java Streams y Lambdas, java v8</h2>
+    <div id="java-streams" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2> Java Streams y Lambdas, java (2014)</h2>
 
         <pre class="original_size">
             <code class="hljs java">
@@ -268,8 +278,8 @@
         </pre>
     </div>
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h2 class="h2_margin_block_8px"> Text record, desde Java 15</h2>
+    <div class="step slide" id="text-record" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2 class="h2_margin_block_8px"> Text record, desde Java 15 (2020)</h2>
 
         <pre class="reduce_size">
             <code class="hljs java">
@@ -297,8 +307,8 @@
         </pre>
     </div>
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h2 class="h2_margin_block_8px"> Record, desde Java 17</h2>
+    <div class="step slide" id="records" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2 class="h2_margin_block_8px"> Record, desde Java 17 (2021)</h2>
 
         <pre class="reduce_size">
             <code class="hljs java">
@@ -316,8 +326,8 @@
         </pre>
     </div>
 
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
-        <h2 class="h2_margin_block_8px"> Pattern matching, desde Java 17</h2>
+    <div class="step slide" id="pattern-matching" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+        <h2 class="h2_margin_block_8px"> Pattern matching, desde Java 17 (2021)</h2>
 
         <pre class="reduce_size">
             <code class="hljs java">
@@ -338,6 +348,8 @@
             </code>
         </pre>
     </div>
+
+
 
     <div id="motions" class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <h1>Motion effects 101</h1>
