@@ -444,3 +444,12 @@ td {
     height: 100%;
     display: block;
 } 
+
+.ul_reduce_font {
+    font-size: 1.7rem;
+    margin-left: .5rem !important;
+}
+
+.ul_reduce_font > li {
+    margin-inline: .5rem !important;
+}

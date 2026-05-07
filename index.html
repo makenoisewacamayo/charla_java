@@ -164,7 +164,7 @@
     </div>
 
 
-    <div id="java-springboot" class="step slide" data-x="15600" data-y="-1500">
+    <div id="java-springboot" class="step slide" data-x="15600" data-y="-1500" data-rotate="90">
         <h1>Java y springboot</h1>
         <p>Java es el lenguaje</p>
         <p>springboot es un framework y dicta el tono de como vamos a usar java </p>
@@ -195,7 +195,7 @@
     </div>
 
 
-    <div class="step slide" id="java-function" data-x="17800" data-y="-1500">
+    <div class="step slide" id="java-function" data-x="17800" data-y="-1500" data-rotate="45">
         <h2> Una función en Java</h2>
         <pre class="original_size">
             <code class="hljs java">
@@ -218,7 +218,8 @@
         </pre>
     </div>
 
-    <div id="excepciones" class="step slide" data-x="20000" data-y="-1500">
+    <div id="excepciones" class="step slide" data-x="20000" data-y="-1500" data-rotate="1000">
+        <h2> Colecciones en Java, desde Java 1.2</h2>>
         <h2> Exceciones una para cada caso</h2>
         <p>La excepción mas famosa "NullPointerException" (del millon de dolares)</p>
         <div class="centering">
@@ -229,7 +230,7 @@
          <p class="left bottom"><small>Referencia de la imagen: <a href=" https://somoshackersdelaprogramacion.es/excepciones-en-java">Somos Hackers de la Programación</a></small></p>
     </div>
 
-    <div id="colecciones" class="step slide" data-x="22200" data-y="-1500">
+    <div id="colecciones" class="step slide" data-x="22200" data-y="-1500" data-rotate="300">
         <h2> Colecciones en Java, desde Java 1.2</h2>
          <img src="images/herenciaiterable.png" 
              alt="Colecciones de java"
@@ -258,7 +259,7 @@
     </div>
        
 
-    <div id="java-streams" class="step slide" data-x="24400" data-y="-1500">
+    <div id="java-streams" class="step slide" data-x="24400" data-y="-1500" data-rotate="50">
         <h2> Java Streams y Lambdas, java (2014)</h2>
 
         <pre class="original_size">
@@ -278,7 +279,7 @@
         </pre>
     </div>
 
-    <div class="step slide" id="text-record" data-x="26600" data-y="-1500">
+    <div class="step slide" id="text-record" data-x="26600" data-y="-1500"  data-rotate="150">
         <h2 class="h2_margin_block_8px"> Text record, desde Java 15 (2020)</h2>
 
         <pre class="reduce_size">
@@ -307,7 +308,7 @@
         </pre>
     </div>
 
-    <div class="step slide" id="records" data-x="28800" data-y="-1500">
+    <div class="step slide" id="records" data-x="28800" data-y="-1500"  data-rotate="-100">
         <h2 class="h2_margin_block_8px"> Record, desde Java 17 (2021)</h2>
 
         <pre class="reduce_size">
@@ -326,7 +327,7 @@
         </pre>
     </div>
 
-    <div class="step slide" id="pattern-matching" data-x="31000" data-y="-1500">
+    <div class="step slide" id="pattern-matching" data-x="31000" data-y="-1500"  data-rotate="250">
         <h2 class="h2_margin_block_8px"> Pattern matching, desde Java 17 (2021)</h2>
 
         <pre class="reduce_size">
@@ -349,7 +350,7 @@
         </pre>
     </div>
 
-    <div class="step slide" id="sealed-class" data-x="35000" data-y="-1500">
+    <div class="step slide" id="sealed-class" data-x="35000" data-y="-1500" data-rotate="200">
         <h2 class="h2_margin_block_8px"> Sealed classes, desde Java 17 (2021)</h2>
 
         <pre class="reduce_size">
@@ -386,6 +387,49 @@
         </code>
         </pre>
     </div>
+
+    <div class="step slide" id="difficult" data-x="55000" data-y="-1500" data-rotate="270">
+        <h2 class="h2_margin_block_8px"> Que hace díficil el desarrollo en Java (Bci)</h2>
+        <img src="images/How-to-Test-in-a-Microservices-Architecture.jpeg" 
+            alt="Dificultades en Java"
+            width="600"
+            height="550"
+            class="left"
+        />
+        <ul class="right ul_reduce_font">
+            <li>El ecosistema de Java es muy grande y diverso.</li>
+            <li>Gestión de memoria: Aunque Java tiene un recolector de basura, hay fugas de memoria.</li>
+                <ul class="ul_reduce_font">
+                    <li>Consume del heap: out of memory</li>
+                    <li>Streams, Listeter y sockets mal cerrados</li>
+                    <li>Mal uso de la concurrencia</li>
+                    <li>Recurción mal manejada</li>
+                </ul>
+            <li>Uno necesita mucho más código para hacer lo mismo en <strong>Java</strong></li>
+            <li>Bci librerías propias y requiere que uno este familiarizado con ellas.</li>
+            <li>Arquitectura de microservicios: produce muchos fallos si no es cuidadoso</li>
+        </ul>
+    </div>
+
+
+    <div id="moreinfo" class="step slide" data-x="4400" data-y="1200" data-rotate="720" data-transition-duration="2000">
+        <h1>Más información</h1>
+        <ul>
+            <li><a href="https://docs.oracle.com/en/java/">Documentación Oficial</a> Oracle docs.</li>
+
+        <li>Más ejemplos y demos:
+            <ul>
+            <li><a href="https://github.com/jveverka/spring-examples">ejemplos de spring boot</a></li>
+            <li><a href="https://spring.io/projects/spring-boot"> Sitio oficial de Spring Boot</a></li>
+            </ul>
+        </li>
+        <li>Presentación <a href="https://github.com/impress/impressionist">Impressionist</a>: a 3D GUI to create impress.js presentations</li>
+        </ul>
+
+        <div class="notes">
+        </div>
+    </div>
+
 
 
     <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
